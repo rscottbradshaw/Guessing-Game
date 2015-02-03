@@ -27,6 +27,9 @@ end
 def start_game
   while @win == false && @count < 5
   user_guess
+  if @count == 5
+    puts "Sorry but you are out of guesses.  Your random number was #{@number}.  Please try again!"
+  end
 end
 end
 end
